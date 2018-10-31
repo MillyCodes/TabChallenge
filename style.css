@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    line-height: 2em;
+    text-decoration: none;
+    padding: 10px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: auto minmax(min-content, 1fr);
+    grid-template-rows: auto minmax(min-content, 1fr) auto;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background: #f0f0f2;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    padding: 20px;
+    margin-bottom: 1em;
+}
+
+aside {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 5px 10px;
+    min-width: 180px;
+    align-self: start;
+}
+
+aside p {
+    line-height: 1.5em;
+}
+
+aside a {
+    text-decoration: none;
+    color: rgb(95, 141, 95);
+    font-weight: bold;
+}
+
+main {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    margin-right: 18px;
+}
+main p {
+    line-height: 2em;
+}
+
+footer {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    background-color: #474f59;
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    background-color: ghostwhite;
+    padding: 10px;
+    line-height: 1.8;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 300;
+}
+
+hr {
+    margin-bottom: 3em;
+}
+
+footer a:link {
+    color: lightgrey;
+}
+
+span {
+    float: right;
+    font-size: 0.8em;
+}
+
+#date {
+    margin: 0;
+}
+/* widget styles */
+#widget-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+#widget-container * {
+    margin: 0px;
+}
+
+#widget-container div {
+    display: inline-block;
+    margin: 10px 0 0 10px;
+}
+
+#widget-container img {
+    width: 100%;
+    min-height: 70%;
+}
+
+/* Optional Task: Limit the number of lines that the item title can take up to be three lines, truncating longer titles with an ellipsis (…). Make sure you don’t break the layout!
+ */
+/* line truncated @ 2 instead of 3 for more visual effect. */
+#widget-container h4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#widget-container p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #999999;
+}
+
+#widget-container a {
+    color: #010101;
+    text-decoration-line: none;
+}
+
+.category {
+    text-transform: uppercase;
+}
+
+/* Responsive style for mobile devices  */ /* Portrait */
+@media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    /* make grid single column */
+    #widget-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    /* remove sidebar for better view */
+    aside {
+        display: none;
+    }
+    /* increased line high for smaller screens */
+    header {
+        padding: 5%;
+        line-height: 2em;
+    }
+    .widget-header span {
+        display: none;
+    }
+}
