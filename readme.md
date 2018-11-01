@@ -7,4 +7,4 @@ In this project I used a picture of a webpage with an ad widget and recreated it
 -   HTML
 -   CSS
 -   JavaScript
--   An API
+-   An API from the magical internet.
