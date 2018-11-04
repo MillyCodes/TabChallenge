@@ -1,6 +1,6 @@
-# Code Challege: Mockup to a Widget
+# Code Challenge: Mockup to a Widget
 
-In this project I used a picture of a webpage with an ad widget and recreated it, information fetched from an API and displayed without any special frameworks or libraries.
+In this project I used a picture of a webpage with an advert widget and recreated it using simple html, css and js. The information is fetched from an API with an `XMLHttpRequest()` and displayed without any special frameworks or libraries.
 
 # Technologies Used
 
