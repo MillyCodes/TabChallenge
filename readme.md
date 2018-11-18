@@ -11,4 +11,5 @@ In this project I used a picture of a webpage with an advert widget and recreate
 
 ### Screenshot
 
+live demo @ [JSBin](https://jsbin.com/lubedik)
 ![Screenshot](screenshot.png)
